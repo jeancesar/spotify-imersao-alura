@@ -24,10 +24,11 @@ function displayResults(result) {
 
 document.addEventListener('input', function () {
     const searchTerm = searchInput.value.toLowerCase();
+    console.log(searchTerm);
     if (searchTerm === '') {
-        resultPlaylist.classList.add('hidden');
-        resultArtist.classList.remove('hidden');
-        return
+        resultPlaylist.classList.toggle('hidden');
+        resultArtist.classList.toggle('hidden');
+        return;
     }
 
     requestApi(searchTerm);
