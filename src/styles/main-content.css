@@ -1,4 +1,5 @@
 /* HEADER */
+
 .main-container {
     max-width: 80vw;
     height: 100vh;
@@ -10,6 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 16px;
     margin: 10px;
     border-radius: 8px;
     background-color: #121212;
@@ -24,7 +26,6 @@
 
 .header__navigation .navigation .arrow-left {
     margin-right: 1.25rem;
-
 }
 
 .arrow-left,
@@ -36,8 +37,8 @@
     height: 32px;
     background: var(--bg-icon);
     background-color: var(--bg-arrow-color);
-    border: none;
     border-radius: 50%;
+    border: none;
     cursor: pointer;
 }
 
@@ -64,10 +65,10 @@
 }
 
 .header__search input {
-    background-color: transparent;
+    background: transparent;
     border: none;
-    padding: 0 100px 0 12px;
-    color: white;
+    padding: 0px 100px 0 12px;
+    color: #fff;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -81,6 +82,7 @@
     background-color: transparent;
     margin-right: 32px;
     border: none;
+    cursor: pointer;
 }
 
 .header__login .login {
@@ -90,6 +92,7 @@
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 /* PLAYLIST */
